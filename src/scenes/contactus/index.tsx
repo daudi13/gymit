@@ -6,10 +6,10 @@ import HText from "@/shared/HText";
 
 
 type Props = {
-  setPageSelected: (value: SelectedPage) => void
+  setSelectedPage: (value: SelectedPage) => void
 }
 
-const ContactUs = ({ setPageSelected }: Props) => {
+const ContactUs = ({ setSelectedPage }: Props) => {
 
   const inputStyles = `mt-5 w-full rounded-lg bg-primary-300 px-5 py-3 placeholder-white`;
 
@@ -27,7 +27,7 @@ const ContactUs = ({ setPageSelected }: Props) => {
   }
   return (
     <section id={SelectedPage.ContactUs} className="mx-auto w-5/6 pt-24 pb-22 min-h-full">
-      <motion.div onViewportEnter={() => setPageSelected(SelectedPage.ContactUs)}>
+      <motion.div onViewportEnter={() => setSelectedPage(SelectedPage.ContactUs)}>
         {/* header */}
         <motion.div className="md:w-3/5"
           initial="hidden"
