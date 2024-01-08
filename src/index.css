@@ -14,3 +14,12 @@ body,
   @apply text-gray-500;
   
 }
+
+.hero::before{
+  position: absolute;
+  content: "";
+  top: -20px;
+  left: -20px;
+  z-index: 1;
+  background-image: "url('./assets/AbstractWaves.png)"
+}
