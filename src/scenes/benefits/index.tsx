@@ -44,7 +44,10 @@ const Benfits = ({
   return (
     <section id={SelectedPage.Benefits} className='mx-auto min-h-full w-5/6 py-20'>
       <motion.div onViewportEnter={() => setSelectedPage(SelectedPage.Benefits)}>
-        <motion.div className="md:w-3/5 md:my-5" initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.5 }} transition={{ duration: 1.2 }} variants={{
+        <motion.div className="md:w-3/5 md:my-5"
+          initial="hidden" whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+          transition={{ duration: 1.2 }} variants={{
             hidden: { opacity: 0, x: -100 },
             visible: {opacity:1, x: 0}
           }}>
